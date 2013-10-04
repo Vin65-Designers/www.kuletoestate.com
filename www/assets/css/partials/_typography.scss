@@ -23,7 +23,7 @@ ul, ol, dl, p, table, pre {
 	margin-bottom: 1em;
 }
 
-#{headings(1,6)}{
+h1, h2, h3, h4, h5, h6{
 	color: $headingFontColor;
 	font-family: $headingFontFamily;
 	font-weight: normal;
