@@ -1,18 +1,28 @@
-//   ===================================================================================================
-//		Default Theme
-//   ===================================================================================================
-$backgroundColor: #eee; // Website Background Color
-$boxShadowColor: #999; // Box Shadow Color
-$websiteWidth: 950px;
+// Fonts
+$garamond: "adobe-garamond-pro-n4","adobe-garamond-pro", garamond, sans-serif;
+$georgia: georgia, sans-serif;
 
-$fontColor: #666; // General Font Color
-$fontFamily: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // Default Font Family
+// Colors
+$black: #000;
+$purple: #621c32;
+$red: #4f1922;
+$tan: #f8eedb;
+$gold: #d0c48f;
+$grey: #d7d7d7;
+$white: #fff;
+$brown: #534945;
 
-$headingFontFamily: "Times New Roman", Times, serif; // Default Heading Font Family
-$headingFontColor: #333; // Default Heading Font Color
+$backgroundColor: $black;
+$websiteWidth: 1024px;
 
-$headerFontColor: #333; //Font Color outside the container
-$headerFontColorHover: #000; // Hover font color outside the container
+$fontColor: $black;
+$fontFamily: $garamond;
 
-$footerFontColor: #333; //Font Color outside the container
-$footerFontColorHover: #000; // Hover font color outside the container
+$headingFontFamily: $garamond;
+$headingFontColor: $red;
+
+$headerFontColor: $white;
+$headerFontColorHover: $grey;
+
+$footerFontColor: $white;
+$footerFontColorHover: $grey;
