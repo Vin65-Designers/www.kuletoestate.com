@@ -1,0 +1,25 @@
+.homepageContent{
+	background: #fff;
+	box-shadow: 0 0 20px $boxShadowColor;
+	behavior: $pie;
+}
+
+.homepageText{
+	float: left;
+	margin-bottom: 20px;
+	padding: 0 30px 30px 20px;
+	width: 470px;
+}
+
+.homepageProductGroup {
+	float: left;
+	margin: 0 0 20px;
+	padding: 0 0 30px 20px;
+	width: 400px;
+}
+
+#slider{
+	height: 350px;
+	overflow: hidden;
+	width: 950px;
+	}

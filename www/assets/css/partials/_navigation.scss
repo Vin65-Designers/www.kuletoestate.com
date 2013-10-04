@@ -1,0 +1,133 @@
+/* ----- a. Main Menu ----- */
+.mainMenu{
+	float: right;
+	font-size: 13px;
+	height: 24px;
+	margin: 80px 0 30px;
+	position: relative;
+	width: 640px;
+	z-index: 101;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		float: right;
+		padding: 0;
+		position: relative;
+	}
+
+	li{
+		float: left;
+		margin: 0 0 0 55px;
+		padding: 0;
+		position: relative;
+
+		a{
+			color: $headerFontColor;
+			display: inline-block;
+			height: 32px;
+			line-height: 32px;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			text-decoration: none;
+
+			&:hover{
+				color: $headerFontColorHover;
+				text-decoration: none;
+			}
+		}
+
+		// Drop Down
+		&:hover ul{
+			border: 1px solid #ccc;
+			display: block;
+			font-size: 12px;
+		}
+
+		ul{
+			display: none;
+			left: -10px;
+			position: absolute;
+			top: 32px;
+			width: 180px;
+		}
+
+		li{
+			display: block;
+			float: none;
+			margin: 0;
+			text-align: left;
+			width: 180px;
+
+			a{
+				background-color: #fff;
+				color: #666;
+				display: block;
+				float: none;
+				height: 28px;
+				line-height: 28px;
+				margin: 0;
+				padding: 0 0 0 10px;
+				text-align: left;
+				text-transform: none;
+				width: 170px;
+
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+
+	.v65-pageAParent{
+		color: $headerFontColorHover
+	}
+
+	.v65-home{}
+
+	.v65-selected{
+		color: $headerFontColorHover;
+		font-weight: bold;
+	}
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu{
+	border-right: 1px solid #ccc;
+	float: left;
+	margin: 60px 40px 0 0;
+	padding-right: 20px;
+	width: 170px;
+
+	ul{
+		font-size: 11px;
+		list-style: none;
+		margin: 0 0 1em 10px;
+		padding: 0;
+		width: 160px;
+	}
+
+	li{
+		line-height: 2;
+
+		a{
+			&:hover{}
+		}
+
+		ul{
+			margin-left: 10px;
+			width: 160px;
+		}
+	}
+
+	.v65-pageAParent {
+		color: #000;
+	}
+
+	.v65-leftSelected{
+		color: #000;
+		font-weight: bold;
+	}
+
+}

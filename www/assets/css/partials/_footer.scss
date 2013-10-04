@@ -1,0 +1,34 @@
+.footer{
+	color: $footerFontColor;
+	padding: 1.5em 0;
+	text-align: center;
+	width: 100%;
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		display: inline;
+		padding:0 5px;
+
+		a{
+			color: $footerFontColor;
+			display: inline-block;
+			font-size: 0.917em;
+			position: relative;
+			&:hover{
+				color: $footerFontColorHover;
+			}
+		}
+	}
+
+	.accolade{
+		font-size: 0.917em;
+	}
+
+	a{
+		color:$footerFontColor;
+	}
+}
