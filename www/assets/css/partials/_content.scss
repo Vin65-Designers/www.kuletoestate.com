@@ -1,7 +1,14 @@
+@import 'content_general';
+
 /* ----- a. Homepage ----- */
 @import 'content_home';
 
 /* ----- b. Page ----- */
 @import 'content_page';
 
+@import 'content_store';
+@import 'content_clubs';
+
+
 /* ----- z. Checkout ----- */
+@import 'content_checkout';
