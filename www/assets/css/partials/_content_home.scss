@@ -1,0 +1,46 @@
+.home{
+	.content{
+		background: $tan;
+		border: 3px solid $gold-dark;
+		float: right;
+		font-size: 18px;
+		line-height: 2;
+		min-height: 457px;
+		padding: 20px;
+		position: relative;
+		width: 310px;
+	}
+}
+
+.sliderWrapper{
+	float: left;
+	margin-top: -38px;
+	width: 611px;
+}
+
+	.scroll{
+		background-image: image-url("scroll.png");
+		background-repeat: no-repeat;
+		height: 38px;
+	}
+
+	.topScroll{
+		background-position: top center;
+	}
+	
+	.bottomScroll{
+		background-position: bottom center;
+	}
+	
+	.slider{
+		border: 3px solid $gold-dark;
+	}
+
+.key{
+	background: image-url('key.png') top left;
+	bottom: -20px;
+	height: 125px;
+	position: absolute;
+	right: 0;
+	width: 180px;
+}
