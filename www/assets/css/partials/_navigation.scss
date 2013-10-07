@@ -1,29 +1,34 @@
 /* ----- a. Main Menu ----- */
-.mainMenu{
-	float: right;
-	font-size: 13px;
-	height: 24px;
-	margin: 80px 0 30px;
+nav{
+	background: $red;
+	font:{
+		family: $georgia;
+		size: 15px;
+	}
+	height: 34px;
+	line-height: 34px;
 	position: relative;
-	width: 640px;
+	text:{
+		align: center;
+		transform: uppercase;
+	}
 	z-index: 101;
 
 	ul{
 		list-style: none;
 		margin: 0;
-		float: right;
 		padding: 0;
 		position: relative;
 	}
 
 	li{
-		float: left;
-		margin: 0 0 0 55px;
+		display: inline-block;
+		margin: 0 15px;
 		padding: 0;
 		position: relative;
 
 		a{
-			color: $headerFontColor;
+			color: $gold;
 			display: inline-block;
 			height: 32px;
 			line-height: 32px;
@@ -40,12 +45,12 @@
 
 		// Drop Down
 		&:hover ul{
-			border: 1px solid #ccc;
 			display: block;
-			font-size: 12px;
 		}
 
 		ul{
+			background: $brown;
+			background: rgba($brown, 0.74);
 			display: none;
 			left: -10px;
 			position: absolute;
@@ -61,12 +66,11 @@
 			width: 180px;
 
 			a{
-				background-color: #fff;
-				color: #666;
+				color: $grey;
 				display: block;
 				float: none;
-				height: 28px;
-				line-height: 28px;
+				height: 30px;
+				line-height: 30px;
 				margin: 0;
 				padding: 0 0 0 10px;
 				text-align: left;
@@ -74,7 +78,7 @@
 				width: 170px;
 
 				&:hover{
-					color: #000;
+					color: $gold;
 				}
 			}
 		}
