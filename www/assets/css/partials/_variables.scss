@@ -8,6 +8,7 @@ $purple: #621c32;
 $red: #4f1922;
 $tan: #f8eedb;
 $gold: #d0c48f;
+$gold-dark: #b68859;
 $grey: #d7d7d7;
 $white: #fff;
 $brown: #534945;
@@ -26,3 +27,14 @@ $headerFontColorHover: $grey;
 
 $footerFontColor: $white;
 $footerFontColorHover: $grey;
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}
