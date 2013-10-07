@@ -9,10 +9,10 @@ var v65 = {
 	},
 	home : {
 		initPhotoGallery : function(){
-			if($("#slider").length){
-				$("#slider").v65PhotoGallery({
-					galleryHeight : 350, // This changes the height of the homepage photogallery
-					galleryWidth : 950, // This changes the width of the homepage photogallery
+			if($(".slider").length){
+				$(".slider").v65PhotoGallery({
+					galleryHeight : 497, // This changes the height of the homepage photogallery
+					galleryWidth : 605, // This changes the width of the homepage photogallery
 					galleryId : "d292ba3b-92aa-78a8-257d-3d11ed98eb45"	//	This is where you add the homepage photogallery id
 				});
 			}
