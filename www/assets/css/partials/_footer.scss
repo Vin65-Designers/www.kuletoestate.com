@@ -1,7 +1,6 @@
-.footer{
+footer{
 	color: $footerFontColor;
 	padding: 1.5em 0;
-	text-align: center;
 	width: 100%;
 
 	ul{
@@ -32,3 +31,16 @@
 		color:$footerFontColor;
 	}
 }
+
+	.col3{
+		float: left;
+		margin-bottom: 1em;
+		width: 33%;
+	}
+
+	.copyright{
+		border-top: 1px solid $grey;
+		clear: both;
+		padding-top: 1em;
+		text-transform: uppercase;
+	}
