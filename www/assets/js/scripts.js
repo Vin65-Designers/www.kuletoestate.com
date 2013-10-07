@@ -11,9 +11,10 @@ var v65 = {
 		initPhotoGallery : function(){
 			if($(".slider").length){
 				$(".slider").v65PhotoGallery({
-					galleryHeight : 497, // This changes the height of the homepage photogallery
-					galleryWidth : 605, // This changes the width of the homepage photogallery
-					galleryId : "d292ba3b-92aa-78a8-257d-3d11ed98eb45"	//	This is where you add the homepage photogallery id
+					galleryHeight : 497,
+					galleryWidth : 605,
+					galleryId : "d292ba3b-92aa-78a8-257d-3d11ed98eb45",
+					controlNav: false
 				});
 			}
 		}
