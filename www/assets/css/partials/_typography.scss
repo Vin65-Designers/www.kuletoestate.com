@@ -1,5 +1,10 @@
 body{
-	background-color: $backgroundColor;
+	background:{
+		color: $backgroundColor;
+		position: center 50px;
+		repeat: no-repeat;
+		size: contain;
+	}
 	font-size: 14px;
 	color: $fontColor;
 	font-family: $fontFamily;
@@ -42,9 +47,10 @@ h1, h2, h3, h4, h5, h6{
 
 	h2 {
 		font:{
+			family: $garamond-bold;
 			size: 20px;
 			variant: small-caps;
-			weight: 400;
+			weight: 700;
 		}
 		line-height: 1.2;
 		margin: 0.25em 0 0.5em;
@@ -52,16 +58,17 @@ h1, h2, h3, h4, h5, h6{
 
 	h3 {
 		font:{
-			size: 20px;
+			family: $garamond-bold;
+			size: 18px;
 			variant: small-caps;
-			weight: 400;
+			weight: 700;
 		}
 		line-height: 1.2;
 		margin-bottom: 0.6em;
 	}
 
 	h4 {
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 1.2;
 	}
 
