@@ -1,7 +1,3 @@
-.pageContent{
-	width: 675px;
-}
-
 .content{
 	background: $tan;
 	border: 3px solid $gold-dark;
@@ -9,3 +5,28 @@
 	padding: 20px;
 	position: relative;
 }
+
+.leftFeatureWrapper{
+	float: left;
+
+	.leftFeatures{
+		border-top: 3px solid $gold-dark;
+	}
+
+	.v65-podDescription{
+		line-height: 0;
+		font-size: 0;
+	}
+
+	img{
+		border: 3px solid $gold-dark;
+		border-top: none;
+	}
+}
+
+.pageContent{
+	@include borderBox;
+	padding: 20px 120px 20px 40px;
+	width: 675px;
+}
+
