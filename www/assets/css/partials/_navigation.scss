@@ -3,16 +3,14 @@ header{
 	nav{
 		background: $red;
 		font:{
-			family: $georgia;
-			size: 15px;
+			family: $garamond;
+			size: 20px;
 		}
 		height: 34px;
 		line-height: 34px;
 		position: relative;
-		text:{
-			align: center;
-			transform: uppercase;
-		}
+		font-variant: small-caps;
+		text-align: center;
 		z-index: 101;
 
 		ul{
@@ -51,8 +49,9 @@ header{
 
 			ul{
 				background: $brown;
-				background: rgba($brown, 0.74);
+				background: rgba($brown, 0.7);
 				display: none;
+				font-size: 18px;
 				left: -10px;
 				position: absolute;
 				top: 34px;
@@ -79,7 +78,7 @@ header{
 					width: 170px;
 
 					&:hover{
-						color: $gold;
+						color: $gold-light;
 					}
 				}
 			}
