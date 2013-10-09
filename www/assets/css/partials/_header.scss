@@ -73,19 +73,20 @@
 		width: 21px;
 	}
 
-.header{
-	height:180px;
-	margin-bottom: 1em;
-	position: relative;
-	width: 100%;
-	z-index: 100;
-}
-
 	.logo{
-		background: image-url('logo.jpg') top left no-repeat;
 		display: block;
 		float: right;
-		height: 150px;
 		margin: 10px;
+	}
+
+	.logo-small{
+		background: image-url('logo-small.jpg') top left no-repeat;
+		height: 79px;
+		width: 216px;
+	}
+
+	.logo-large{
+		background: image-url('logo-large.jpg') top left no-repeat;
+		height: 150px;
 		width: 408px;
 	}
