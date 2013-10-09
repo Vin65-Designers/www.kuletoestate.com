@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<v65:metaTags></v65:metaTags>
-
-	<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+	
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 
 	<!--//Vin65 QuickLaunch//-->
-	<script type="text/javascript">
-	     var qlCode='vin65template1:vin65cloud';
-	     var qlLayoutType='Page';
-	</script>
 	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
 	<!--//Vin65 QuickLaunch//-->
 
 	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
 
-	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.css"></v65:css>
+	<v65:css files="/assets/css/screen.min.css"></v65:css>
 
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="//use.typekit.net/vkp6dst.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
 </head>
-<body>
-
-<div class="wrapper v65-group">
-
-	<!--header-->
-	<div class="header">
-
-		<!--logo-->
-		<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png" alt="<v65:websiteName></v65:websiteName>"></a>
-		<!--/logo-->
-
-		<!--mainMenu-->
-		<div class="mainMenu">
-			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
+<body style="background-image: url(<v65:contentBlock group='Page Background'></v65:contentBlock>)" class="page">
+	<section class="userTools">
+		<div class="wrapper narrowWrapper v65-group">
+			<div class="search"><span>Search</span><v65:productSearch></v65:productSearch></div>
+			<div id="user-tools">
+				<v65:login></v65:login>
+				<v65:modalCart></v65:modalCart>
+			</div>
 		</div>
-		<!--/mainMenu-->
+	</section><!--/userTools-->
 
-		<!--user-tools-->
-		<div id="user-tools">
-			<v65:modalCart></v65:modalCart>
-			<v65:login></v65:login>
-		</div>
-		<!--/user-tools-->
+	<div class="wrapper v65-group">
+		<header class="primary v65-group">
+			<nav><v65:layoutHeaderNav  depth="2"></v65:layoutHeaderNav></nav>
+			<div class="wrapper narrowWrapper v65-group">
+				<h1 class="logo logo-small hideText"><a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a></h1>
+			</div>
+		</header>
 
-	</div>
-	<!--/header-->
+		<section class="contentWrapper v65-group">
+			<div class="leftFeatureWrapper v65-group">
+				<div class="scroll topScroll"></div>
+				<div class="leftFeatures">
+					<v65:pods location="Page Left Features" type="description"></v65:pods>
+					<v65:pods location="Page Left Features with Title" type="title,description"></v65:pods>
+				</div>
+				<div class="scroll bottomScroll"></div>
+			</div>
+			
+			<article class="content pageContent">
+				<v65:mainContent></v65:mainContent>
+			</article>
+		</section>
 
-	<!--content-->
-	<div class="content v65-group">
+		<footer class="v65-group">
+			<div class="col3 mapBg">
+				<v65:websiteName></v65:websiteName>
+				<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
+			</div>
+			<div class="col3 v65-group"><nav class="footerNav"><v65:layoutHeaderNav></v65:layoutHeaderNav></nav></div>
+			<div class="col3 social"><v65:customFile file="/v65html/_socialLinks.html"></v65:customFile></div>
 
-		<div class="subMenu">
-			<h3><v65:leftNavSectionTitle depth="2"></v65:leftNavSectionTitle></h3>
-			<v65:layoutLeftNav></v65:layoutLeftNav>
-		</div>
+			<div class="copyright">
+				<span><v65:copyright></v65:copyright>. All rights reserved</span>
+				<span><v65:vin65Accolade></v65:vin65Accolade></span>
+				<span>Site by <a href="#">Athena Design</a></span>
+			</div>
+		</footer>
+	</div><!--/wrapper-->
 
-		<div class="pageContent">
-			<v65:mainContent></v65:mainContent>
-		</div>
-
-	</div>
-	<!--/content-->
-
-	<!--footer-->
-	<div class="footer">
-		<v65:layoutFooterNav></v65:layoutFooterNav>
-		<p><v65:copyright></v65:copyright></p>
-		<p class="accolade"><v65:vin65Accolade></v65:vin65Accolade></p>
-	</div>
-	<!--/footer-->
-
-</div>
-
-<!--//Vin65 QuickLaunchFooter//-->
-<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
-<!--//Vin65 QuickLaunchFooter//-->
-
+	<!--//Vin65 QuickLaunchFooter//-->
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
+	<!--//Vin65 QuickLaunchFooter//-->
 </body>
 </html>

@@ -26,28 +26,30 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 </head>
-<body style="background-image: url(<v65:contentBlock group='Page Background'></v65:contentBlock>)">
+<body style="background-image: url(<v65:contentBlock group='Page Background'></v65:contentBlock>)" class="home">
 	<section class="userTools">
-		<div class="wrapper narrowWrapper">
+		<div class="wrapper narrowWrapper v65-group">
+			<div class="search"><span>Search</span><v65:productSearch></v65:productSearch></div>
 			<div id="user-tools">
 				<v65:login></v65:login>
 				<v65:modalCart></v65:modalCart>
 			</div>
-			<v65:productSearch></v65:productSearch>
 		</div>
 	</section><!--/userTools-->
 
 	<div class="wrapper v65-group">
-		<header>
+		<header class="primary v65-group">
 			<nav><v65:layoutHeaderNav  depth="2"></v65:layoutHeaderNav></nav>
-			<h1 class="logo hideText"><a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a></h1>
+			<div class="wrapper narrowWrapper v65-group">
+				<h1 class="logo logo-large hideText"><a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a></h1>
+			</div>
 		</header>
 
-		<section class="v65-group">
+		<section class="contentWrapper v65-group">
 			<div class="sliderWrapper">
-				<div class="topScroll"></div>
+				<div class="scroll topScroll"></div>
 				<div class="slider"></div>
-				<div class="bottomScroll"></div>
+				<div class="scroll bottomScroll"></div>
 			</div>
 			
 			<article class="content">
@@ -61,7 +63,7 @@
 				<v65:websiteName></v65:websiteName>
 				<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
 			</div>
-			<div class="col3 v65-group"><nav class="footerNav"><v65:layoutFooterNav></v65:layoutFooterNav></nav></div>
+			<div class="col3 v65-group"><nav class="footerNav"><v65:layoutHeaderNav></v65:layoutHeaderNav></nav></div>
 			<div class="col3 social"><v65:customFile file="/v65html/_socialLinks.html"></v65:customFile></div>
 
 			<div class="copyright">
