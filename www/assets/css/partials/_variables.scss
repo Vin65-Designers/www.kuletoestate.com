@@ -33,6 +33,12 @@ $headerFontColorHover: $grey;
 $footerFontColor: $white;
 $footerFontColorHover: $grey;
 
+@mixin borderBox{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .hideText{
 	overflow:hidden;
 	text-indent:100%;
