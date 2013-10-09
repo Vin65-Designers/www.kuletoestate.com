@@ -9,24 +9,9 @@
 
 .sliderWrapper{
 	float: left;
-	margin-top: -38px;
 	width: 611px;
 }
 
-	.scroll{
-		background-image: image-url("scroll.png");
-		background-repeat: no-repeat;
-		height: 38px;
-	}
-
-	.topScroll{
-		background-position: top center;
-	}
-	
-	.bottomScroll{
-		background-position: bottom center;
-	}
-	
 	.slider{
 		border: 3px solid $gold-dark;
 	}
