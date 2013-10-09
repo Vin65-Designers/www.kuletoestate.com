@@ -1,6 +1,6 @@
 .wrapper{
+	background: $black;
 	margin: 0 auto;
-	padding: 0 10px;
 	position: relative;
 	width: $websiteWidth;
 }
@@ -14,3 +14,18 @@
 	.narrowWrapper{
 		width: $innerWrapWidth;
 	}
+
+.scroll{
+	background-image: image-url("scroll.png");
+	background-repeat: no-repeat;
+	height: 38px;
+}
+
+.topScroll{
+	background-position: top center;
+	margin-top: -38px;
+}
+
+.bottomScroll{
+	background-position: bottom center;
+}
