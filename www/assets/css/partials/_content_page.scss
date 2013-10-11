@@ -8,14 +8,34 @@
 
 .leftFeatureWrapper{
 	float: left;
+	width: 247px;
 
 	.leftFeatures{
 		border-top: 3px solid $gold-dark;
 	}
 
+	.v65-pod{
+		position: relative;
+	}
+
+	.v65-podTitle{
+		bottom: 8px;
+		color: $white;
+		font:{
+			family: $garamond;
+			size: 15px;
+			style: italic;
+			weight: 700;
+		}
+		left: 8px;
+		overflow: hidden;
+		position: absolute;
+		width: 233px;
+	}
+
 	.v65-podDescription{
-		line-height: 0;
 		font-size: 0;
+		line-height: 0;
 	}
 
 	img{
