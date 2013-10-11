@@ -5,11 +5,11 @@ header{
 		font:{
 			family: $garamond;
 			size: 20px;
+			variant: small-caps;
 		}
 		height: 34px;
 		line-height: 34px;
 		position: relative;
-		font-variant: small-caps;
 		text-align: center;
 		z-index: 101;
 
@@ -99,39 +99,52 @@ header{
 
 /* ----- b. Sub Menu ----- */
 .subMenu{
-	border-right: 1px solid #ccc;
-	float: left;
-	margin: 60px 40px 0 0;
-	padding-right: 20px;
-	width: 170px;
+	background: $brown-light;
+	border: 3px solid $gold-dark;
+	font-size: 16px;
+	margin: 0 auto 70px;
+	padding: 0 20px;
+	width: 140px;
+
+	font:{
+		family: $garamond;
+		variant: small-caps;
+	}
 
 	ul{
-		font-size: 11px;
+		font-size: 15px;
 		list-style: none;
-		margin: 0 0 1em 10px;
-		padding: 0;
-		width: 160px;
+		margin: 0;
+		padding: 3px 0 0;
 	}
 
 	li{
-		line-height: 2;
-
-		a{
-			&:hover{}
-		}
-
 		ul{
-			margin-left: 10px;
-			width: 160px;
+		}
+	}
+
+	a{
+		color: $grey;
+		display: block;
+		float: none;
+		height: 30px;
+		line-height: 30px;
+		margin: 0;
+		text-align: left;
+		text-transform: none;
+
+		&:hover{
+			color: $gold-light;
+			text-decoration: none;
 		}
 	}
 
 	.v65-pageAParent {
-		color: #000;
+		color: $gold;
 	}
 
 	.v65-leftSelected{
-		color: #000;
+		color: $gold;
 		font-weight: bold;
 	}
 
