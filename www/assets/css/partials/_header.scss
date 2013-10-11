@@ -54,22 +54,7 @@
 		width: 120px !important;
 	}
 
-	button{
-		background: image-url('search.jpg');
-		overflow: hidden;
-		height: 20px;
-		margin: 0;
-		padding: 0;
-		width: 21px;
 
-		&:hover{
-			background-position: top center;
-		}
-
-		span{
-			display: none;
-		}
-	}
 }
 	
 	#v65-searchWidgetInput, #v65-searchWidgetButton{
@@ -79,6 +64,23 @@
 	#v65-searchWidgetButton{
 		height: 20px;
 		width: 21px;
+		button.defaultBtn{
+			background: image-url('search.jpg');
+			border: 0;
+			overflow: hidden;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			width: 21px;
+
+			&:hover{
+				background-position: top center;
+			}
+
+			span{
+				display: none;
+			}
+		}
 	}
 
 	.logo{
