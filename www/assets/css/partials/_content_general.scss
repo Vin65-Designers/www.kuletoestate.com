@@ -1,3 +1,14 @@
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}
+
 .wrapper{
 	background: $black;
 	margin: 0 auto;
@@ -17,17 +28,32 @@
 		width: $innerWrapWidth;
 	}
 
+	.leftCol{
+		float: left;
+		width: 247px;
+	}
+
+	.hidden{
+		visibility: hidden;
+	}
+
 .scroll{
 	background-image: image-url("scroll.png");
 	background-repeat: no-repeat;
 	height: 38px;
 }
 
-.topScroll{
-	background-position: top center;
-	margin-top: -38px;
-}
+	.topScroll{
+		background-position: top center;
+		margin-top: -38px;
+	}
 
-.bottomScroll{
-	background-position: bottom center;
+	.bottomScroll{
+		background-position: bottom center;
+	}
+
+.navScroll{
+	background: image-url('scroll-nav.png') top center no-repeat;
+	height: 22px;
+	margin-top: -25px;
 }
