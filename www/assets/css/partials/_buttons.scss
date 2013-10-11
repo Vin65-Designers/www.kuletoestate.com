@@ -1,0 +1,116 @@
+button {
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		@include gradient($gold-extra-light, $gold-dark);
+		border: 1px solid $red-dark;
+		font-weight: 700;
+		padding: 0;
+		text:{
+			decoration: none;
+			transform: uppercase;
+		}
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			color: $buttonFontColor;
+			height: 1.7em;
+			line-height: 1.7;
+			padding: 0 1em;
+
+		}
+
+		&:hover, &:active{
+			@include gradient($gold-extra-light, $gold-light);
+		}
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		@include gradient($grey, $grey-dark);
+		border: 1px solid $black;
+		font-weight: 700;
+		padding: 0;
+		text:{
+			decoration: none;
+			transform: uppercase;
+		}
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			color: $altButtonFontColor;
+			height: 1.7em;
+			line-height: 1.7;
+			padding: 0 1em;
+		}
+
+		&:hover, &:active{
+			@include gradient($grey-light, $grey);
+		}
+	}
+}
+
+a{	
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
+		@include gradient($gold-extra-light, $gold-dark);
+		border: 1px solid $red-dark;
+		font-weight: 700;
+		padding: 0;
+		text:{
+			decoration: none;
+			transform: uppercase;
+		}
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			color: $buttonFontColor;
+			height: 1.7em;
+			line-height: 1.7;
+			padding: 0 1em;
+		}
+
+		&:hover, &:active{
+			@include gradient($gold-extra-light, $gold-light);
+		}
+	}
+
+	&.fullWidthBtn{
+		display: block;
+		font-size: 16px;
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		@include gradient($grey, $grey-dark);
+		border: 1px solid $black;
+		font-weight: 700;
+		padding: 0;
+		text:{
+			decoration: none;
+			transform: uppercase;
+		}
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			color: $altButtonFontColor;
+			height: 1.7em;
+			line-height: 1.7;
+			padding: 0 1em;
+		}
+
+		&:hover, &:active{
+			@include gradient($grey-light, $grey);
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
