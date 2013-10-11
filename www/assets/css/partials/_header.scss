@@ -4,7 +4,9 @@
 	font-family: sans-serif;
 	font-size: 11px;
 	height: 50px;
+	position: relative;
 	text-transform: uppercase;
+	z-index: 105;
 	
 	.wrapper{
 		padding-top: 8px;
@@ -94,5 +96,6 @@
 	.logo-large{
 		background: image-url('logo-large.jpg') top left no-repeat;
 		height: 150px;
+		margin-bottom: 18px;
 		width: 408px;
 	}
