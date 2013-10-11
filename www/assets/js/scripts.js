@@ -20,6 +20,11 @@ var v65 = {
 		}
 	},
 	page : {
+		init: function(){
+			v65.page.initPhotoGallery();
+			v65.page.removeEmptyLeftFeatureWrapper();
+			v65.page.removeEmptyLeftNav();
+		},
 		initPhotoGallery : function(){
 			if($("#pagePhotoGallery").length){
 				$("#pagePhotoGallery").v65PhotoGallery({
@@ -35,6 +40,16 @@ var v65 = {
 					*/
 				});
 			}
+		},
+		removeEmptyLeftFeatureWrapper : function(){
+			if($(".leftFeatureWrapper").length && !$(".leftFeatureWrapper .v65-pod").length){
+				$(".leftFeatureWrapper").remove();
+			}
+		},
+		removeEmptyLeftNav : function(){
+			if($(".subMenu").length && !$(".subMenu li").length){
+				$(".subMenu").remove();
+			}
 		}
 	}
 }
@@ -42,7 +57,7 @@ var v65 = {
 $(document).ready(function() {
 	v65.global.mainMenuHover();
 	v65.home.initPhotoGallery();
-	v65.page.initPhotoGallery();
+	v65.page.init();
 });
 
 ;(function($,undefined){
