@@ -1,0 +1,44 @@
+.storeContent{
+	@include borderBox;
+	padding: 20px 40px;
+	width: 675px;
+}
+
+.v65-title{
+	font-variant: small-caps;
+}
+
+.v65-product-addToCart-priceWrapper{
+	display: inline-block;
+	min-width: 130px;
+}
+
+.v65-product-addToCart-quantity{
+	display: inline-block;
+	margin-right: 10px;
+	width: 26px;
+}
+
+.v65-product1Up{
+	.v65-product-photo{
+		float: right;
+		width: 20%;
+	}
+
+	.v65-product-infoWrapper{
+		width: 78%;
+	}
+
+		.v65-product-title{
+			font-size: 22px;
+		}
+}
+
+.v65-product-rightCol{
+	h1{
+		font:{
+			family: $garamond;
+			size: 28px;
+		}
+	}
+}
