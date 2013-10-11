@@ -12,7 +12,7 @@ body{
 }
 
 a{
-	color: #369;
+	color: $red-dark;
 	text-decoration: none;
 	&:hover, &:focus, &:active{
 		text-decoration: underline;
