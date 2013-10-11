@@ -10,14 +10,21 @@ $purple: #621c32;
 $red: #4f1922;
 $red-dark: #790000;
 $tan: #f8eedb;
+$gold-extra-light: #f4e6b2;
 $gold-light: #c8ad7a;
 $gold: #d0c48f;
 $gold-dark: #b68859;
+$grey-light: #ccc;
 $grey: #d7d7d7;
+$grey-dark: #999;
 $white: #fff;
 $brown: #3c3532;
+$brown-light: #534945;
 
 $backgroundColor: $black;
+
+$buttonFontColor: $red-dark;
+$altButtonFontColor: $black;
 
 $websiteWidth: 1150px;
 $innerWrapWidth: 975px;
@@ -40,13 +47,11 @@ $footerFontColorHover: $grey;
 	box-sizing: border-box;
 }
 
-.hideText{
-	overflow:hidden;
-	text-indent:100%;
-	white-space:nowrap;
-	
-	a{
-		display:block;
-		height:100%;
-	}
+@mixin gradient($color1, $color2){
+	background: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
 }
