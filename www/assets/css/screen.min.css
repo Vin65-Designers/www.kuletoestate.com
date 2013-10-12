@@ -546,16 +546,159 @@ a.nivo-nextNav {
   background-position: 0 -22px;
 }
 
-.hideText {
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-.hideText a {
-  display: block;
-  height: 100%;
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?66280190");
+  src: url("../fonts/fontello.eot?66280190#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?66280190") format("woff"), url("../fonts/fontello.ttf?66280190") format("truetype"), url("../fonts/fontello.svg?66280190#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?66280190#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-youtube:before {
+  content: '\55';
+}
+
+/* 'U' */
+.icon-acrobat:before {
+  content: '\e3';
+}
+
+/* 'ã' */
+.icon-home:before {
+  content: '\2302';
+}
+
+/* '⌂' */
+.icon-star:before {
+  content: '\2605';
+}
+
+/* '★' */
+.icon-star-empty:before {
+  content: '\2606';
+}
+
+/* '☆' */
+.icon-menu:before {
+  content: '\2630';
+}
+
+/* '☰' */
+.icon-heart-empty:before {
+  content: '\2661';
+}
+
+/* '♡' */
+.icon-heart:before {
+  content: '\2665';
+}
+
+/* '♥' */
+.icon-layout:before {
+  content: '\268f';
+}
+
+/* '⚏' */
+.icon-mail:before {
+  content: '\2709';
+}
+
+/* '✉' */
+.icon-location:before {
+  content: '\e724';
+}
+
+/* '' */
+.icon-basket:before {
+  content: '\e73d';
+}
+
+/* '' */
+.icon-vimeo:before {
+  content: '\f306';
+}
+
+/* '' */
+.icon-twitter:before {
+  content: '\f309';
+}
+
+/* '' */
+.icon-facebook-squared:before {
+  content: '\f30e';
+}
+
+/* '' */
+.icon-gplus:before {
+  content: '\f30f';
+}
+
+/* '' */
+.icon-pinterest:before {
+  content: '\f312';
+}
+
+/* '' */
+.icon-video:before {
+  content: '🎬';
+}
+
+/* '\1f3ac' */
+.icon-user:before {
+  content: '👤';
+}
+
+/* '\1f464' */
+.icon-monitor:before {
+  content: '💻';
+}
+
+/* '\1f4bb' */
+.icon-phone-1:before {
+  content: '📞';
+}
+
+/* '\1f4de' */
+.icon-search-1:before {
+  content: '🔍';
+}
+
+/* '\1f50d' */
 /*   ===================================================================================================
      1. Typography - These get copied into the admin.css
 ======================================================================================================== */
@@ -571,7 +714,7 @@ body {
 }
 
 a {
-  color: #369;
+  color: #790000;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -663,7 +806,9 @@ hr {
   font-family: sans-serif;
   font-size: 11px;
   height: 50px;
+  position: relative;
   text-transform: uppercase;
+  z-index: 105;
 }
 .userTools .wrapper {
   padding-top: 8px;
@@ -704,20 +849,6 @@ hr {
   padding: 2px 5px;
   width: 120px !important;
 }
-.search button {
-  background: url('../images/search.jpg?1381181222');
-  overflow: hidden;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  width: 21px;
-}
-.search button:hover {
-  background-position: top center;
-}
-.search button span {
-  display: none;
-}
 
 #v65-searchWidgetInput, #v65-searchWidgetButton {
   float: left;
@@ -726,6 +857,21 @@ hr {
 #v65-searchWidgetButton {
   height: 20px;
   width: 21px;
+}
+#v65-searchWidgetButton button.defaultBtn {
+  background: url('../images/search.jpg?1381181222');
+  border: 0;
+  overflow: hidden;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 21px;
+}
+#v65-searchWidgetButton button.defaultBtn:hover {
+  background-position: top center;
+}
+#v65-searchWidgetButton button.defaultBtn span {
+  display: none;
 }
 
 .logo {
@@ -743,6 +889,7 @@ hr {
 .logo-large {
   background: url('../images/logo-large.jpg?1381172011') top left no-repeat;
   height: 150px;
+  margin-bottom: 18px;
   width: 408px;
 }
 
@@ -754,10 +901,10 @@ header nav {
   background: #4f1922;
   font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
   font-size: 20px;
+  font-variant: small-caps;
   height: 34px;
   line-height: 34px;
   position: relative;
-  font-variant: small-caps;
   text-align: center;
   z-index: 101;
 }
@@ -769,7 +916,7 @@ header nav ul {
 }
 header nav li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 12px;
   padding: 0;
   position: relative;
 }
@@ -824,6 +971,7 @@ header nav li li a:hover {
 }
 header nav .v65-pageAParent {
   color: #d7d7d7;
+  font-weight: bold;
 }
 header nav .v65-selected {
   color: #d7d7d7;
@@ -832,37 +980,61 @@ header nav .v65-selected {
 
 /* ----- b. Sub Menu ----- */
 .subMenu {
-  border-right: 1px solid #ccc;
-  float: left;
-  margin: 60px 40px 0 0;
-  padding-right: 20px;
-  width: 170px;
+  background: #534945;
+  border: 3px solid #b68859;
+  font-size: 16px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+  width: 140px;
+  font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
+  font-variant: small-caps;
 }
 .subMenu ul {
-  font-size: 11px;
+  font-size: 15px;
   list-style: none;
-  margin: 0 0 1em 10px;
-  padding: 0;
-  width: 160px;
+  margin: 0;
+  padding: 3px 0 0;
 }
-.subMenu li {
-  line-height: 2;
+.subMenu ul ul {
+  padding-left: 5px;
+  font-size: 85%;
 }
-.subMenu li ul {
-  margin-left: 10px;
-  width: 160px;
+.subMenu a {
+  color: #d7d7d7;
+  display: block;
+  float: none;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+}
+.subMenu a:hover {
+  color: #c8ad7a;
+  text-decoration: none;
 }
 .subMenu .v65-pageAParent {
-  color: #000;
+  color: #d0c48f;
+  font-weight: bold;
 }
 .subMenu .v65-leftSelected {
-  color: #000;
+  color: #d0c48f;
   font-weight: bold;
 }
 
 /*   ===================================================================================================
      4. Content
 ======================================================================================================== */
+.hideText {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.hideText a {
+  display: block;
+  height: 100%;
+}
+
 .wrapper {
   background: black;
   margin: 0 auto;
@@ -871,14 +1043,28 @@ header nav .v65-selected {
 }
 
 .contentWrapper {
-  padding: 18px;
   margin: 0 auto;
   position: relative;
   width: 975px;
 }
 
 .narrowWrapper {
+  margin: 0 auto;
+  position: relative;
   width: 975px;
+}
+
+.wideContent {
+  float: none;
+}
+
+.leftCol {
+  float: left;
+  width: 247px;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .scroll {
@@ -894,6 +1080,12 @@ header nav .v65-selected {
 
 .bottomScroll {
   background-position: bottom center;
+}
+
+.navScroll {
+  background: url('../images/scroll-nav.png?1381526135') top center no-repeat;
+  height: 22px;
+  margin-top: -25px;
 }
 
 /* ----- a. Homepage ----- */
@@ -932,14 +1124,29 @@ header nav .v65-selected {
 }
 
 .leftFeatureWrapper {
-  float: left;
+  width: 247px;
 }
 .leftFeatureWrapper .leftFeatures {
   border-top: 3px solid #b68859;
 }
+.leftFeatureWrapper .v65-pod {
+  position: relative;
+}
+.leftFeatureWrapper .v65-podTitle {
+  bottom: 8px;
+  color: white;
+  font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  left: 8px;
+  overflow: hidden;
+  position: absolute;
+  width: 233px;
+}
 .leftFeatureWrapper .v65-podDescription {
-  line-height: 0;
   font-size: 0;
+  line-height: 0;
 }
 .leftFeatureWrapper img {
   border: 3px solid #b68859;
@@ -952,6 +1159,45 @@ header nav .v65-selected {
   box-sizing: border-box;
   padding: 20px 120px 20px 40px;
   width: 675px;
+}
+
+.storeContent {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  width: 675px;
+}
+
+.v65-title {
+  font-variant: small-caps;
+}
+
+.v65-product-addToCart-priceWrapper {
+  display: inline-block;
+  min-width: 130px;
+}
+
+.v65-product-addToCart-quantity {
+  display: inline-block;
+  margin-right: 10px;
+  width: 26px;
+}
+
+.v65-product1Up .v65-product-photo {
+  float: right;
+  width: 20%;
+}
+.v65-product1Up .v65-product-infoWrapper {
+  width: 78%;
+}
+.v65-product1Up .v65-product-title {
+  font-size: 22px;
+}
+
+.v65-product-rightCol h1 {
+  font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
+  font-size: 28px;
 }
 
 /* ----- z. Checkout ----- */
@@ -1034,6 +1280,138 @@ form#v65-checkBilling .v65-additionalComments {
 /*   ===================================================================================================
      7. Buttons
 ======================================================================================================== */
+button.defaultBtn, button.modalBtn, button.largeBtn {
+  background: #f4e6b2;
+  background-image: -webkit-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -moz-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -ms-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -o-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: linear-gradient(top, #f4e6b2, #b68859);
+  border: 1px solid #790000;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button.defaultBtn span, button.modalBtn span, button.largeBtn span {
+  background: none;
+  color: #790000;
+  height: 1.7em;
+  line-height: 1.7;
+  padding: 0 1em;
+}
+button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
+  background: #f4e6b2;
+  background-image: -webkit-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -moz-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -ms-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -o-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: linear-gradient(top, #f4e6b2, #c8ad7a);
+}
+button.altBtn, button.altModalBtn, button.altLargeBtn {
+  background: #d7d7d7;
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -ms-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -o-linear-gradient(top, #d7d7d7, #999999);
+  background-image: linear-gradient(top, #d7d7d7, #999999);
+  border: 1px solid black;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
+  background: none;
+  color: black;
+  height: 1.7em;
+  line-height: 1.7;
+  padding: 0 1em;
+}
+button.altBtn:hover, button.altBtn:active, button.altModalBtn:hover, button.altModalBtn:active, button.altLargeBtn:hover, button.altLargeBtn:active {
+  background: #cccccc;
+  background-image: -webkit-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -ms-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: linear-gradient(top, #cccccc, #d7d7d7);
+}
+
+a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
+  background: #f4e6b2;
+  background-image: -webkit-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -moz-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -ms-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: -o-linear-gradient(top, #f4e6b2, #b68859);
+  background-image: linear-gradient(top, #f4e6b2, #b68859);
+  border: 1px solid #790000;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
+  background: none;
+  color: #790000;
+  height: 1.7em;
+  line-height: 1.7;
+  padding: 0 1em;
+}
+a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active, a.fullWidthBtn:hover, a.fullWidthBtn:active {
+  background: #f4e6b2;
+  background-image: -webkit-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -moz-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -ms-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: -o-linear-gradient(top, #f4e6b2, #c8ad7a);
+  background-image: linear-gradient(top, #f4e6b2, #c8ad7a);
+}
+a.fullWidthBtn {
+  display: block;
+  font-size: 16px;
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+}
+a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  background: #d7d7d7;
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -ms-linear-gradient(top, #d7d7d7, #999999);
+  background-image: -o-linear-gradient(top, #d7d7d7, #999999);
+  background-image: linear-gradient(top, #d7d7d7, #999999);
+  border: 1px solid black;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
+  background: none;
+  color: black;
+  height: 1.7em;
+  line-height: 1.7;
+  padding: 0 1em;
+}
+a.linkAltBtn:hover, a.linkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active {
+  background: #cccccc;
+  background-image: -webkit-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -ms-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #cccccc, #d7d7d7);
+  background-image: linear-gradient(top, #cccccc, #d7d7d7);
+}
+a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
+  min-width: auto;
+}
+
 /*   ===================================================================================================
      8. Footer
 ======================================================================================================== */
@@ -1047,23 +1425,31 @@ footer ul {
   padding: 0;
 }
 footer li {
-  display: inline;
-  padding: 0 5px;
+  list-style: none;
 }
 footer li a {
   color: white;
-  display: inline-block;
-  font-size: 0.917em;
   position: relative;
 }
 footer li a:hover {
   color: #d7d7d7;
 }
-footer .accolade {
-  font-size: 0.917em;
-}
 footer a {
   color: white;
+}
+
+.footerNav li {
+  background: url('../images/footerBullet.jpg?1381532025') center left no-repeat;
+  padding-left: 1em;
+  float: left;
+  width: 45%;
+}
+.footerNav a {
+  color: white;
+}
+.footerNav a:hover {
+  color: #b68859;
+  text-decoration: none;
 }
 
 .col3 {
@@ -1072,9 +1458,45 @@ footer a {
   width: 33%;
 }
 
+.contactInfo {
+  color: #b68859;
+}
+.contactInfo .websiteName {
+  color: #d0c48f;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+.contactInfo p {
+  margin-left: 18px;
+}
+
+.social {
+  text-align: right;
+}
+.social li {
+  color: #b68859;
+  display: inline-block;
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+.social a {
+  color: white;
+  font-size: 15px;
+}
+
 .copyright {
   border-top: 1px solid #d7d7d7;
+  color: #848484;
   clear: both;
+  font-family: sans-serif;
+  font-size: 11px;
   padding-top: 1em;
   text-transform: uppercase;
+}
+.copyright a {
+  color: #848484;
+}
+.copyright span {
+  display: inline-block;
+  margin-right: 9px;
 }
