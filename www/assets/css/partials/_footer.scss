@@ -9,13 +9,10 @@ footer{
 	}
 
 	li{
-		display: inline;
-		padding:0 5px;
+		list-style: none;
 
 		a{
 			color: $footerFontColor;
-			display: inline-block;
-			font-size: 0.917em;
 			position: relative;
 			&:hover{
 				color: $footerFontColorHover;
@@ -23,14 +20,28 @@ footer{
 		}
 	}
 
-	.accolade{
-		font-size: 0.917em;
-	}
-
 	a{
 		color:$footerFontColor;
 	}
 }
+
+	.footerNav{
+		li{
+			background: image-url("footerBullet.jpg") center left no-repeat;
+			padding-left: 1em;
+			float: left;
+			width: 45%;
+		}
+
+		a{
+			color: $white;
+
+			&:hover{
+				color: $gold-dark;
+				text-decoration: none;
+			}
+		}
+	}
 
 	.col3{
 		float: left;
@@ -38,9 +49,53 @@ footer{
 		width: 33%;
 	}
 
+	.contactInfo{
+		color: $gold-dark;
+
+		.websiteName{
+			color: $gold;
+			text-transform: uppercase;
+			margin-left: 0;
+		}
+
+		p{
+			margin-left: 18px;
+		}
+	}
+
+	.social{
+		text-align: right;
+
+		li{
+			color: $gold-dark;
+			display: inline-block;
+			padding: 0 2px;
+			text-transform: uppercase;
+		}
+
+		a{
+			color: $white;
+			font-size: 15px;
+		}
+	}
+
 	.copyright{
 		border-top: 1px solid $grey;
+		color: #848484;
 		clear: both;
+		font:{
+			family: sans-serif;
+			size: 11px;
+		}
 		padding-top: 1em;
 		text-transform: uppercase;
+
+		a{
+			color: #848484;
+		}
+
+		span{
+			display: inline-block;
+			margin-right: 9px;
+		}
 	}
