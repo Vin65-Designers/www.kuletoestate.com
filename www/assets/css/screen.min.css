@@ -821,6 +821,13 @@ hr {
   color: white;
 }
 
+#v65-modalCartDropdown {
+  text-transform: none;
+}
+#v65-modalCartDropdown a {
+  color: black;
+}
+
 .search {
   float: right;
   margin: 8px 0 0 12px;
@@ -859,7 +866,7 @@ hr {
   width: 21px;
 }
 #v65-searchWidgetButton button.defaultBtn {
-  background: url('../images/search.jpg?1381181222');
+  background: url('../images/search.jpg?1381861008');
   border: 0;
   overflow: hidden;
   height: 20px;
@@ -881,13 +888,13 @@ hr {
 }
 
 .logo-small {
-  background: url('../images/logo-small.jpg?1381186334') top left no-repeat;
+  background: url('../images/logo-small.jpg?1381861008') top left no-repeat;
   height: 79px;
   width: 216px;
 }
 
 .logo-large {
-  background: url('../images/logo-large.jpg?1381172011') top left no-repeat;
+  background: url('../images/logo-large.jpg?1381861008') top left no-repeat;
   height: 150px;
   margin-bottom: 18px;
   width: 408px;
@@ -1076,7 +1083,7 @@ header nav .v65-selected {
 }
 
 .scroll {
-  background-image: url('../images/scroll.png?1381171028');
+  background-image: url('../images/scroll.png?1381861008');
   background-repeat: no-repeat;
   height: 38px;
 }
@@ -1091,7 +1098,7 @@ header nav .v65-selected {
 }
 
 .navScroll {
-  background: url('../images/scroll-nav.png?1381526135') top center no-repeat;
+  background: url('../images/scroll-nav.png?1381861008') top center no-repeat;
   height: 22px;
   margin-top: -25px;
 }
@@ -1114,7 +1121,7 @@ header nav .v65-selected {
 }
 
 .key {
-  background: url('../images/key.png?1381172976') top left;
+  background: url('../images/key.png?1381861008') top left;
   bottom: -20px;
   height: 125px;
   position: absolute;
@@ -1167,10 +1174,6 @@ header nav .v65-selected {
   box-sizing: border-box;
   padding: 20px 40px;
   width: 675px;
-}
-
-.v65-title {
-  font-variant: small-caps;
 }
 
 .v65-product-addToCart-priceWrapper {
@@ -1291,7 +1294,6 @@ button.defaultBtn, button.modalBtn, button.largeBtn {
   font-weight: 700;
   padding: 0;
   text-decoration: none;
-  text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1321,7 +1323,6 @@ button.altBtn, button.altModalBtn, button.altLargeBtn {
   font-weight: 700;
   padding: 0;
   text-decoration: none;
-  text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1352,7 +1353,6 @@ a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
   font-weight: 700;
   padding: 0;
   text-decoration: none;
-  text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1389,7 +1389,6 @@ a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   font-weight: 700;
   padding: 0;
   text-decoration: none;
-  text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1439,7 +1438,7 @@ footer a {
 }
 
 .footerNav li {
-  background: url('../images/footerBullet.jpg?1381532025') center left no-repeat;
+  background: url('../images/footerBullet.jpg?1381861008') center left no-repeat;
   padding-left: 1em;
   float: left;
   width: 45%;
