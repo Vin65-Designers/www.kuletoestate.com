@@ -1054,6 +1054,14 @@ header nav .v65-selected {
   width: 975px;
 }
 
+.content {
+  background: #f8eedb;
+  border: 3px solid #b68859;
+  float: right;
+  padding: 20px;
+  position: relative;
+}
+
 .wideContent {
   float: none;
 }
@@ -1115,14 +1123,6 @@ header nav .v65-selected {
 }
 
 /* ----- b. Page ----- */
-.content {
-  background: #f8eedb;
-  border: 3px solid #b68859;
-  float: right;
-  padding: 20px;
-  position: relative;
-}
-
 .leftFeatureWrapper {
   width: 247px;
 }

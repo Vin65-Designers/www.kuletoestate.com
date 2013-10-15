@@ -28,6 +28,14 @@
 		width: $innerWrapWidth;
 	}
 
+	.content{
+		background: $tan;
+		border: 3px solid $gold-dark;
+		float: right;
+		padding: 20px;
+		position: relative;
+	}
+
 	.wideContent{
 		float: none;
 	}
