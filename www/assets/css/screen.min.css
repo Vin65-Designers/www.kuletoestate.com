@@ -866,7 +866,7 @@ hr {
   width: 21px;
 }
 #v65-searchWidgetButton button.defaultBtn {
-  background: url('../images/search.jpg?1381861008');
+  background: url('../images/search.jpg?1381181222');
   border: 0;
   overflow: hidden;
   height: 20px;
@@ -888,13 +888,13 @@ hr {
 }
 
 .logo-small {
-  background: url('../images/logo-small.jpg?1381861008') top left no-repeat;
+  background: url('../images/logo-small.jpg?1381186334') top left no-repeat;
   height: 79px;
   width: 216px;
 }
 
 .logo-large {
-  background: url('../images/logo-large.jpg?1381861008') top left no-repeat;
+  background: url('../images/logo-large.jpg?1381172011') top left no-repeat;
   height: 150px;
   margin-bottom: 18px;
   width: 408px;
@@ -1051,6 +1051,7 @@ header nav .v65-selected {
 
 .contentWrapper {
   margin: 0 auto;
+  min-height: 500px;
   position: relative;
   width: 975px;
 }
@@ -1083,7 +1084,7 @@ header nav .v65-selected {
 }
 
 .scroll {
-  background-image: url('../images/scroll.png?1381861008');
+  background-image: url('../images/scroll.png?1381171028');
   background-repeat: no-repeat;
   height: 38px;
 }
@@ -1098,7 +1099,7 @@ header nav .v65-selected {
 }
 
 .navScroll {
-  background: url('../images/scroll-nav.png?1381861008') top center no-repeat;
+  background: url('../images/scroll-nav.png?1381526135') top center no-repeat;
   height: 22px;
   margin-top: -25px;
 }
@@ -1121,7 +1122,7 @@ header nav .v65-selected {
 }
 
 .key {
-  background: url('../images/key.png?1381861008') top left;
+  background: url('../images/key.png?1381172976') top left;
   bottom: -20px;
   height: 125px;
   position: absolute;
@@ -1201,6 +1202,37 @@ header nav .v65-selected {
 .v65-product-rightCol h1 {
   font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
   font-size: 28px;
+}
+
+.v65-productDetails {
+  float: left;
+  width: 70%;
+}
+
+.v65-product-tabs li.v65-product-tabs-active {
+  height: 27px;
+}
+.v65-product-tabs li.v65-product-tabs-active a {
+  background: none;
+}
+.v65-product-tabs li:first-child a {
+  border-left: none;
+}
+.v65-product-tabs li.last a {
+  border-right: none;
+  border-radius: 0;
+}
+.v65-product-tabs li a {
+  background: none;
+}
+
+.v65-product-tab-active {
+  border: 0;
+}
+
+.v65-productImage {
+  float: right;
+  width: 28%;
 }
 
 /* ----- z. Checkout ----- */
@@ -1438,7 +1470,7 @@ footer a {
 }
 
 .footerNav li {
-  background: url('../images/footerBullet.jpg?1381861008') center left no-repeat;
+  background: url('../images/footerBullet.jpg?1381532025') center left no-repeat;
   padding-left: 1em;
   float: left;
   width: 45%;
