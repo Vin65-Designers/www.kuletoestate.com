@@ -1,53 +1,57 @@
 <v65:stateProfile:complianceAdvisory></v65:stateProfile:complianceAdvisory>
 
-<div class="v65-productWrapper v65-group">
+<div class="v65-productDrilldown v65-group">  
 
-     <div class="v65-product-leftCol">
+     <div class="v65-productImage">
 
           <v65:product:photo showPhoto="1"></v65:product:photo>
-
           <v65:product:photos></v65:product:photos>
 
-          <div class="v65-productDrilldown-specs">
+     </div>  
 
-               <v65:wine:specs></v65:wine:specs>
+     <div class="v65-productDetails">
 
-               <v65:product:media></v65:product:media>
-
-         </div>
-
-     </div>
-
-     <div class="v65-product-rightCol">
-
-          <h1><v65:product:title></v65:product:title></h1>
-
-          <v65:product:subtitle></v65:product:subtitle>
-
+          <h1><v65:product:title></v65:product:title></h1>  
+          <v65:product:subtitle></v65:product:subtitle>  
+          <v65:product:actionMessage></v65:product:actionMessage>
+          <v65:product:inCompliantStateMessage></v65:product:inCompliantStateMessage>
+          <v65:product:addToCart></v65:product:addToCart>
+          <v65:product:reviewStats></v65:product:reviewStats>
           <v65:product:teaser></v65:product:teaser>
 
-          <v65:product:shipDate></v65:product:shipDate>
+           <v65:product:tabs>
 
-          <v65:product:actionMessage></v65:product:actionMessage>
+               <v65:product:tab title="Taste">
+                    <v65:product:description></v65:product:description>
+                    <v65:wine:tastingNotes></v65:wine:tastingNotes>
+                    <v65:wine:ratings></v65:wine:ratings>
+                    <v65:wine:awards></v65:wine:awards>
+               </v65:product:tab>
 
-          <v65:product:inCompliantStateMessage></v65:product:inCompliantStateMessage>
+               <v65:product:tab title="Profile">
+                    <v65:wine:wineMakerNotes></v65:wine:wineMakerNotes>
+                    <v65:wine:foodPairingNotes></v65:wine:foodPairingNotes>
+                    <v65:wine:otherNotes></v65:wine:otherNotes>
+                    <v65:product:media></v65:product:media>
+               </v65:product:tab>
 
-          <v65:product:availability></v65:product:availability>
+               <v65:product:tab title="Wine Specs">
+                    <v65:wine:specs></v65:wine:specs>
+                    
+                  
+               </v65:product:tab>
 
-          <v65:product:addToCart></v65:product:addToCart>
+               <v65:product:tab title="Production">
+                     <v65:wine:productionNotes></v65:wine:productionNotes>
+                     <v65:wine:vineyardNotes></v65:wine:vineyardNotes>
+                     <v65:wine:production></v65:wine:production>
+                   
+               </v65:product:tab>
 
-          <v65:product:reviewStats></v65:product:reviewStats>
+          </v65:product:tabs>
 
           <v65:product:socialBar></v65:product:socialBar>
 
-          <v65:product:description></v65:product:description>
-
-          <v65:wine:profile></v65:wine:profile>
-
-          <v65:product:reviews></v65:product:reviews>
-
-      </div>
-
+     </div>
 </div>
 
-<v65:product:relatedProducts></v65:product:relatedProducts>

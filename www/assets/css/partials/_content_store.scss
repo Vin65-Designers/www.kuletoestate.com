@@ -38,3 +38,46 @@
 		}
 	}
 }
+
+.v65-productDetails{
+	float: left;
+	width: 70%;
+}
+
+	.v65-product-tabs{
+		li{
+			&.v65-product-tabs-active{
+				height: 27px;
+
+				a{
+					background: none;
+				}
+			}
+
+			&:first-child{
+				a{
+					border-left: none;
+				}
+			}
+
+			&.last{
+				a{
+					border-right: none;
+					border-radius: 0;
+				}
+			}
+
+			a{
+				background: none;
+			}
+		}
+	}
+
+	.v65-product-tab-active{
+		border: 0;
+	}
+
+.v65-productImage{
+	float: right;
+	width: 28%;
+}
