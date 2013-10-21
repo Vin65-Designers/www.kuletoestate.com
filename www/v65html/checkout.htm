@@ -39,7 +39,7 @@
 
 	<div class="wrapper v65-group">
 		<header class="primary v65-group">
-			<nav class="hidden"><v65:layoutHeaderNav  depth="2"></v65:layoutHeaderNav></nav>
+			<nav><v65:layoutHeaderNav  depth="2"></v65:layoutHeaderNav></nav>
 			<div class="wrapper narrowWrapper v65-group">
 				<h1 class="logo logo-small hideText"><a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a></h1>
 			</div>
@@ -52,6 +52,13 @@
 		</section>
 
 		<footer class="narrowWrapper v65-group">
+			<div class="col3 contactInfo">
+				<p class="websiteName"><v65:websiteName></v65:websiteName></p>
+				<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
+			</div>
+			<div class="col3 v65-group"><nav class="footerNav"><v65:layoutFooterNav></v65:layoutFooterNav></nav></div>
+			<div class="col3 social"><v65:customFile file="/v65html/_socialLinks.html"></v65:customFile></div>
+
 			<div class="copyright">
 				<span><v65:copyright></v65:copyright>. All rights reserved</span>
 				<span><v65:vin65Accolade></v65:vin65Accolade></span>
