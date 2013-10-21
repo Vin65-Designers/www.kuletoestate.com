@@ -1,10 +1,17 @@
 var v65 = {
 	global : {
+		init : function(){
+			v65.global.mainMenuHover();
+			v65.global.tradeLink();
+		},
 		mainMenuHover : function(){
 			$(".mainMenu ul li:last-child").css("margin-right", "0");
 			$(".mainMenu ul li ul li").hover(function(){
 				$(this).parent().parent().children("a").toggleClass("hover");
 			});
+		},
+		tradeLink : function(){
+			$("a[href='/Trade']").attr("target", "_blank");
 		}
 	},
 	home : {
@@ -55,7 +62,7 @@ var v65 = {
 }
 
 $(document).ready(function() {
-	v65.global.mainMenuHover();
+	v65.global.init();
 	v65.home.initPhotoGallery();
 	v65.page.init();
 });
