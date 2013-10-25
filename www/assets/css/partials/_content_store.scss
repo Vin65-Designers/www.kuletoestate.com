@@ -30,12 +30,9 @@
 		}
 }
 
-.v65-product-rightCol{
+.v65-productDetails{
 	h1{
-		font:{
-			family: $garamond;
-			size: 28px;
-		}
+		@extend h2;
 	}
 }
 

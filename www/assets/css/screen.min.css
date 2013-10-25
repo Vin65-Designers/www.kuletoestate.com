@@ -721,7 +721,7 @@ a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, p, table, ul, ol {
+h1, h2, .v65-productDetails h1, h3, h4, h5, h6, p, table, ul, ol {
   margin-top: 0;
   padding-top: 0;
 }
@@ -730,7 +730,7 @@ ul, ol, dl, p, table, pre {
   margin-bottom: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, .v65-productDetails h1, h3, h4, h5, h6 {
   color: #790000;
   font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
   font-weight: normal;
@@ -745,7 +745,7 @@ h1 {
   margin-bottom: 0.2em;
 }
 
-h2 {
+h2, .v65-productDetails h1 {
   font-family: "adobe-garamond-pro-n7", "adobe-garamond-pro", sans-serif;
   font-size: 20px;
   font-variant: small-caps;
@@ -1197,11 +1197,6 @@ header nav .v65-selected {
 }
 .v65-product1Up .v65-product-title {
   font-size: 22px;
-}
-
-.v65-product-rightCol h1 {
-  font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
-  font-size: 28px;
 }
 
 .v65-productDetails {
