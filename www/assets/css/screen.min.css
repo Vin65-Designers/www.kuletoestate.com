@@ -1009,9 +1009,9 @@ header nav .v65-selected {
   color: #d7d7d7;
   display: block;
   float: none;
-  height: 30px;
-  line-height: 30px;
+  line-height: 22px;
   margin: 0;
+  padding: 5px 0;
   text-align: left;
   text-transform: none;
 }
@@ -1234,7 +1234,6 @@ header nav .v65-selected {
 /* ----- z. Checkout ----- */
 #v65-fieldset-paymentMethod {
   float: left;
-  width: 400px;
 }
 
 form#v65-checkBilling .v65-additionalComments {
@@ -1246,6 +1245,16 @@ form#v65-checkBilling .v65-additionalComments {
 
 #v65-signUpClubSummaryWrapper {
   margin-bottom: 20px;
+}
+
+#v65-checkoutCartSummaryWrapper, #v65-signUpClubSummaryWrapper {
+  background: none;
+  border: 1px solid #ccc;
+}
+
+#v65-signUpClubSummaryWrapper, #v65-fieldset-paymentMethod, #v65-fieldset-billingInfo,
+#v65-fieldset-shippingInfo, #v65-fieldset-usernamePassword, #v65-fieldset-shippingOptions {
+  width: 430px;
 }
 
 /*   ===================================================================================================
