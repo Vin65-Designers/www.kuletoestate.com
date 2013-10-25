@@ -952,26 +952,25 @@ header nav li ul {
   left: -10px;
   position: absolute;
   top: 34px;
-  width: 180px;
 }
 header nav li li {
   display: block;
   float: none;
+  line-height: 30px;
   margin: 0;
   text-align: left;
-  width: 180px;
 }
 header nav li li a {
   color: #d7d7d7;
   display: block;
   float: none;
-  height: 30px;
-  line-height: 30px;
+  height: auto;
+  line-height: 22px;
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 5px 10px;
   text-align: left;
   text-transform: none;
-  width: 170px;
+  width: 190px;
 }
 header nav li li a:hover {
   color: #c8ad7a;
