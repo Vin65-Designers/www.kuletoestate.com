@@ -26,13 +26,16 @@
 	}
 
 		.v65-product-title{
-			font-size: 22px;
+			@extend h2;
 		}
 }
 
 .v65-productDetails{
 	h1{
-		@extend h2;
+		font:{
+			family: $garamond;
+			size: 28px;
+		}
 	}
 }
 
