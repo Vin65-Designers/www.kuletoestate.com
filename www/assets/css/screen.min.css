@@ -706,7 +706,6 @@ body {
   background-color: black;
   background-position: center 50px;
   background-repeat: no-repeat;
-  background-size: contain;
   font-size: 14px;
   color: black;
   font-family: "adobe-garamond-pro-n4", "adobe-garamond-pro", garamond, sans-serif;
@@ -1050,7 +1049,7 @@ header nav .v65-selected {
 
 .contentWrapper {
   margin: 0 auto;
-  min-height: 500px;
+  min-height: 520px;
   position: relative;
   width: 975px;
 }
@@ -1498,7 +1497,6 @@ footer a {
   color: #b68859;
 }
 .contactInfo .websiteName {
-  color: #d0c48f;
   text-transform: uppercase;
   margin-left: 0;
 }
